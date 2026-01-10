@@ -208,9 +208,9 @@ p {
 }
 
 /* ================================
-   Hero Section
+   Main Banner Section
    ================================ */
-.hero {
+.main-banner {
     position: relative;
     min-height: 85vh;
     display: flex;
@@ -222,7 +222,7 @@ p {
     overflow: hidden;
 }
 
-.hero-overlay {
+.main-banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -232,14 +232,14 @@ p {
     z-index: 1;
 }
 
-.hero-content {
+.main-banner-content {
     position: relative;
     z-index: 2;
     max-width: 900px;
     padding: var(--spacing-xl) var(--spacing-md);
 }
 
-.hero-title {
+.main-banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: var(--white);
@@ -247,7 +247,7 @@ p {
     line-height: 1.1;
 }
 
-.hero-subtitle {
+.main-banner-subtitle {
     font-size: 1.35rem;
     color: rgba(255, 255, 255, 0.95);
     max-width: 700px;
@@ -255,14 +255,14 @@ p {
     line-height: 1.7;
 }
 
-.hero-cta {
+.main-banner-cta {
     display: flex;
     gap: var(--spacing-sm);
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.hero-image-placeholder {
+.banner-image-placeholder {
     position: absolute;
     top: 0;
     left: 0;
@@ -275,9 +275,21 @@ p {
     z-index: 0;
 }
 
-.hero-image-placeholder p {
+.banner-image-placeholder p {
     color: rgba(255, 255, 255, 0.3);
     font-size: 1rem;
+}
+
+.banner-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 /* ================================
@@ -641,19 +653,19 @@ p {
         font-size: 2rem;
     }
     
-    .hero {
+    .main-banner {
         min-height: 70vh;
     }
     
-    .hero-title {
+    .main-banner-title {
         font-size: 2.5rem;
     }
     
-    .hero-subtitle {
+    .main-banner-subtitle {
         font-size: 1.1rem;
     }
     
-    .hero-cta {
+    .main-banner-cta {
         flex-direction: column;
     }
     
@@ -686,11 +698,11 @@ p {
 }
 
 @media (max-width: 480px) {
-    .hero-title {
+    .main-banner-title {
         font-size: 2rem;
     }
     
-    .hero-subtitle {
+    .main-banner-subtitle {
         font-size: 1rem;
     }
     
