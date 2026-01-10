@@ -286,9 +286,10 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
-    background-position: center;
+    background-size: 80%;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-color: var(--primary-teal-dark);
     z-index: 0;
 }
 
