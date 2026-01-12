@@ -1,0 +1,238 @@
+/* Projects Page Styles - Matches Research Page Design */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-teal-dark) 100%);
+    color: var(--white);
+    padding: calc(72px + var(--spacing-xl)) 0 var(--spacing-xl);
+    text-align: center;
+}
+
+.page-header h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Content Section */
+.projects-content {
+    padding: 2rem 0 4rem;
+    background: white;
+}
+
+/* Projects Introduction */
+.projects-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 1.5rem;
+}
+
+.intro-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Projects List */
+.projects-list {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+/* Individual Project Item - Matches publication-item style */
+.project-item {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    border-color: var(--primary-teal);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-location {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-teal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-years {
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    background: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+}
+
+.project-role {
+    font-size: 1rem;
+    color: var(--gray-dark);
+    font-style: italic;
+    margin: 0 0 1rem 0;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-dark);
+    margin: 0;
+}
+
+/* Partner Organizations Section */
+.partners-section {
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    padding: 3rem 0 0;
+    border-top: 2px solid var(--gray-light);
+}
+
+.partners-section .section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.partners-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+}
+
+.partners-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--gray-dark);
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.partner-column h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-teal);
+}
+
+.partner-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partner-column li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+    padding: 0.4rem 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .projects-intro {
+        margin-bottom: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+    }
+
+    .partners-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .partners-intro p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-content {
+        padding: 1.5rem 0 3rem;
+    }
+
+    .project-item {
+        padding: 1.25rem;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .partners-section {
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+}
