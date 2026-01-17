@@ -46,6 +46,112 @@
     margin-bottom: 0;
 }
 
+/* Current Work Section */
+.current-work-section {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.current-role-card {
+    background: linear-gradient(135deg, rgba(13, 115, 119, 0.03) 0%, rgba(13, 115, 119, 0.08) 100%);
+    border: 2px solid var(--primary-teal);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.role-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-teal);
+    margin: 0;
+}
+
+.role-years {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--primary-teal);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.role-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 0 0 1rem 0;
+}
+
+.role-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+    margin: 0 0 2.5rem 0;
+}
+
+.partner-organizations {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--primary-teal);
+}
+
+.partner-organizations h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2rem;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.partner-region {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-terracotta);
+}
+
+.partner-region h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-teal);
+    margin: 0 0 1rem 0;
+}
+
+.partner-region ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partner-region li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-dark);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.partner-region li:last-child {
+    border-bottom: none;
+}
+
 /* Projects List */
 .projects-list {
     max-width: 900px;
@@ -190,6 +296,36 @@
         margin-bottom: 1.5rem;
     }
 
+    .current-role-card {
+        padding: 1.5rem;
+    }
+
+    .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .role-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .role-title {
+        font-size: 1.1rem;
+    }
+
+    .role-description {
+        font-size: 1rem;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .partner-region {
+        padding: 1.25rem;
+    }
+
     .project-item {
         padding: 1.5rem;
         margin-bottom: 1.5rem;
@@ -221,6 +357,30 @@
 @media (max-width: 480px) {
     .projects-content {
         padding: 1.5rem 0 3rem;
+    }
+
+    .current-role-card {
+        padding: 1.25rem;
+    }
+
+    .role-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .partners-grid {
+        gap: 1rem;
+    }
+
+    .partner-region {
+        padding: 1rem;
+    }
+
+    .partner-region h5 {
+        font-size: 1rem;
+    }
+
+    .partner-region li {
+        font-size: 0.9rem;
     }
 
     .project-item {
