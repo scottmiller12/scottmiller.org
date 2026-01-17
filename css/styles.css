@@ -914,6 +914,37 @@ a[target="_blank"].no-icon::after {
     }
 }
 
+.contact-note {
+    background: var(--off-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--accent-terracotta);
+}
+
+.contact-note p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--gray-dark);
+}
+
+.contact-note ul {
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-md);
+}
+
+.contact-note li {
+    margin-bottom: 0.5rem;
+    color: var(--gray-dark);
+}
+
+.contact-note code {
+    background: var(--white);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--primary-teal);
+}
+
 /* ================================
    Responsive Design
    ================================ */

@@ -94,8 +94,15 @@
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
 
-            <div class="text-center mt-4">
-                <p>Or email directly: <a href="mailto:scott@scottmiller.org" class="text-link">scott@scottmiller.org</a></p>
+            <div class="contact-note mt-4">
+                <p><strong>Note:</strong> This contact form is currently a template. To receive submissions, you'll need to integrate a form service:</p>
+                <ul>
+                    <li><strong>Formspree</strong> - Free plan includes 50 submissions/month. Add your endpoint to the form action.</li>
+                    <li><strong>Netlify Forms</strong> - Add <code>netlify</code> attribute to the form tag (works automatically if hosted on Netlify).</li>
+                    <li><strong>Google Forms</strong> - Embed a Google Form for submissions to Google Sheets.</li>
+                    <li><strong>EmailJS</strong> - Send form data directly to your email via JavaScript.</li>
+                </ul>
+                <p>Until configured, visitors should contact you at the email address in the footer.</p>
             </div>
         </div>
     </section>
