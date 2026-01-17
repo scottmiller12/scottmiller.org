@@ -1,0 +1,12 @@
+# robots.txt for scottmiller.org
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://scottmiller.org/sitemap.xml
+
+# Disallow certain patterns
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.xml$
